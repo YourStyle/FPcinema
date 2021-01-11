@@ -31,16 +31,17 @@ function showMovies(movies) {
 
         const movieEL = document.createElement('div')
         movieEL.innerHTML = `
-            <div class="card">
-                <div class="card-header animated-bg" id="header">
+            <div class="card animated-bg">
+                <div class="card-header" id="header">
+                <span class="${getClassByRate(vote_average)}"><p>${vote_average}</p></span>
                 <img src="${IMG_PATH + poster_path}" alt="${title}" class=""></div>
                 <div class="card-content">
                     <h3 class="card-title " id="title">${title}</h3>
                     <p class="card-excerpt" id="excerpt">
                         ${overview}
-                        <span class="">&nbsp;</span>
-                        <span class="">&nbsp;</span>
-                        <span class="">&nbsp;</span>
+                        <div class="btn_row">
+                            <a href="#">Watch now<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                        </div>
                     </p>
                 </div>
             </div>

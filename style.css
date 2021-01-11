@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: white;
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
@@ -25,7 +25,7 @@ header {
 .search {
   background-color: transparent;
   border: 2px solid var(--primary-color);
-  border-radius: 50px;
+  border-radius: 10px;
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -82,16 +82,36 @@ main {
   font-weight: bold;
 }
 
-.movie-info span.green {
-  color: lightgreen;
+span.green {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 0 0 15px 0;
+    position: absolute;
+    color: green;
 }
 
-.movie-info span.orange {
-  color: orange;
+p {
+    margin: 0;
+    padding: 3px;
 }
 
-.movie-info span.red {
-  color: red;
+span.orange {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 0 0 15px 0;
+    position: absolute;
+    color: orange;
+}
+
+span.red {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 0 0 15px 0;
+    position: absolute;
+    color: red;
 }
 
 .overview {
@@ -138,3 +158,33 @@ main {
         background-position: -150% 0;
     }
 }
+
+.btn_row {
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+.btn_row a {
+      background: red;
+      padding: 10px 50px;
+      border-radius: 4px;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 6px 40px rgba(red,.7);
+      cursor: pointer;
+      font-size: 16px;
+      transition: .3s ease-in;
+}
+      
+.btn_row i {
+        color: #fff;
+        font-size: 14px;
+        margin-left: 10px;
+        font-weight: 900;
+    }
+.btn_row:hover {
+          background: lighten(red, 5);
+          cursor: pointer;
+      }
